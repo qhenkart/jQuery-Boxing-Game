@@ -5,6 +5,7 @@ body{
   margin: 0px;
   background-color:#444;
   font-size: 18px;
+  background-image: url('src/images/background.jpg');
 }
 body, a:link, a:visited, a:active{
   color: lightblue;
@@ -13,6 +14,7 @@ body, a:link, a:visited, a:active{
   padding:5px 12px;
   float:right;
 }
+
 .topbar{
   height:32px;
   background-color: #555;
@@ -24,4 +26,9 @@ body, a:link, a:visited, a:active{
   border:10px solid red;
   border-radius:10px;
   position:absolute;
+}
+/* new images */
+img{
+  width:150px;
+  height:178px;
 }
