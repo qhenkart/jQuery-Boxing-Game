@@ -1,4 +1,4 @@
-var makeFredBoxer = function(top, left, timeBetweenSteps){
+var FredBoxer = function(top, left, timeBetweenSteps){
   this.$node = $('<img class="boxerfredimage" src="src/images/fredboxer.gif"/>');
   // debugger;
   top = 350;
@@ -8,12 +8,12 @@ var makeFredBoxer = function(top, left, timeBetweenSteps){
   // so we must keep a copy of the old version of this function
 
 };
-makeFredBoxer.prototype = Object.create(Dancer.prototype);
+FredBoxer.prototype = Object.create(Dancer.prototype);
 
-makeFredBoxer.prototype.constructor = makeFredBoxer;
+FredBoxer.prototype.constructor = FredBoxer;
 
 
-makeFredBoxer.prototype.step = function(){
+FredBoxer.prototype.step = function(){
   // call the old version of step at the beginning of any call to this new version of step
   Dancer.prototype.step.apply(this, arguments)
   // toggle() is a jQuery method to show/hide the <span> tag.
@@ -24,7 +24,7 @@ makeFredBoxer.prototype.step = function(){
 };
 
 
-var makeAllenBoxer = function(top, left, timeBetweenSteps){
+var AllenBoxer = function(top, left, timeBetweenSteps){
   this.$node = $('<img class="allenboxerimage" src="src/images/allenboxer.gif"/>');
   // debugger;
   top = 350;
@@ -34,12 +34,12 @@ var makeAllenBoxer = function(top, left, timeBetweenSteps){
   // so we must keep a copy of the old version of this function
 
 };
-makeAllenBoxer.prototype = Object.create(Dancer.prototype);
+AllenBoxer.prototype = Object.create(Dancer.prototype);
 
-makeAllenBoxer.prototype.constructor = makeAllenBoxer;
+AllenBoxer.prototype.constructor = AllenBoxer;
 
 
-makeAllenBoxer.prototype.step = function(){
+AllenBoxer.prototype.step = function(){
   // call the old version of step at the beginning of any call to this new version of step
   Dancer.prototype.step.apply(this, arguments)
   // toggle() is a jQuery method to show/hide the <span> tag.

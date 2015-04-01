@@ -39,9 +39,13 @@ img{
   height:300px;
   position:absolute;
 }
-.allenboxerimage {
-
+.dead {
+  width:300px;
+  height:150px;
+  margin-top: 200px;
 }
+
+
 .flipped {
 
   -moz-transform: scaleX(-1);
@@ -51,4 +55,19 @@ img{
   filter: FlipH;
   -ms-filter: "FlipH";
 
+}
+
+
+.fredHits {
+ height:10px;
+ width:30px;
+ background-color: red;
+ display: inline-block;
+
+}
+.allenHits {
+ height:10px;
+ width:30px;
+ background-color: red;
+ display: inline-block;
 }
