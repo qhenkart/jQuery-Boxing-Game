@@ -6,13 +6,13 @@ var Fred = function(){
   this.victoryImage = "src/images/victoryfred.gif"; 
   this.tko = "src/images/fredhurt.gif";
   this.exists = "Fred"
+  this.identity= "PlayerOne"
 
   PlayerOne.call(this);
 
 };
 
 Fred.prototype = Object.create(PlayerOne.prototype);
-Fred.prototype.identity = "PlayerOne"
 
 var Allen = function(){
   this.$node = $('<img class="playerTwo flipped" src="src/images/allenboxer.gif"/>');
@@ -22,6 +22,7 @@ var Allen = function(){
   this.victoryImage = "src/images/victoryallen.gif"; 
   this.tko = "src/images/allenhurt.gif";
   this.exists = 'Allen'
+  this.identity = "PlayerTwo"
   PlayerTwo.call(this);
 
 
@@ -30,7 +31,6 @@ var Allen = function(){
 
 
 Allen.prototype = Object.create(PlayerTwo.prototype);
-Allen.prototype.identity = "PlayerTwo";
 
 
 

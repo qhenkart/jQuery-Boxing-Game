@@ -42,7 +42,7 @@ Boxer.prototype.move = function(direction){
   if(direction === this.up && (parseInt($(this.name).css('top')) - 45 >= 170)) {
 
     $(this.name).animate({
-      'top' : "-=45px" //moves up  });
+      'top' : "-=65px" //moves up  });
     });
   }
      //this 1 move left (a)
@@ -51,13 +51,13 @@ Boxer.prototype.move = function(direction){
       $(this.name).toggleClass("flipped") 
     }
     $(this.name).animate({
-      'left' : "-=45px" //moves left
+      'left' : "-=65px" //moves left
     });
   }
   // this 1 moves down (s)
   if(direction === this.down && (parseInt($(this.name).css('top')) + 45 < 380) ){
     $(this.name).animate({
-      'top' : "+=45px" //moves down
+      'top' : "+=65px" //moves down
     });
   }
    //this 1 moves to right (d)
@@ -66,7 +66,7 @@ Boxer.prototype.move = function(direction){
       $(this.name).toggleClass("flipped");
     }
     $(this.name).animate({
-      'left' : "+=45px" //moves right
+      'left' : "+=65px" //moves right
     });
 
   }
