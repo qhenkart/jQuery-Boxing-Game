@@ -43,14 +43,12 @@ img{
 
 
 .flipped {
-
   -moz-transform: scaleX(-1);
   -o-transform: scaleX(-1);
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
   filter: FlipH;
   -ms-filter: "FlipH";
-
 }
 
 
@@ -66,4 +64,23 @@ img{
  width:30px;
  background-color: red;
  display: inline-block;
+}
+
+
+.block{
+  opacity:0.6;
+}
+
+.splash {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  font-size: 60px;
+  font-style: bold;
+  text-align: center;
+
+}
+
+.splash p{
+  font-size: 20px;
 }

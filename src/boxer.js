@@ -74,7 +74,11 @@ Boxer.prototype.move = function(direction){
 
     this.block = true
     var context = this;
-    setTimeout(function(){context.block = false}, 1000);
+    $(this.name).toggleClass("block")
+    setTimeout(function(){
+      context.block = false
+      $(context.name).toggleClass("block")
+    }, 1000);
   }
 }
 
@@ -117,8 +121,7 @@ Boxer.prototype.victory = function(){
     finished = true;
     $(playerTwo.name).toggleClass('dead');
     $(this.name).attr('src', this.victoryImage); 
-    setTimeout(function(){alert("Good Game!")}, 2000)
-
+    this.restart()
   }else{
 
     $(playerOne.name).attr('src', playerOne.tko);
@@ -126,8 +129,17 @@ Boxer.prototype.victory = function(){
     $(playerOne.name).toggleClass("dead");
 
     $(this.name).attr('src', this.victoryImage); 
-    setTimeout(function(){alert("Good Game!")}, 2000)
+    this.restart();
   }
   $('body').off()
+
+}
+
+Boxer.prototype.restart = function(){
+  setTimeout(function(){
+    if(confirm("Good Game! Play Again?")){
+      location.reload();
+    }
+  }, 5000)
 
 }

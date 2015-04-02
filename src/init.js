@@ -3,6 +3,7 @@ $(document).ready(function(){
   window.dancers = {};
   window.finished = false
 
+  
   $(".addDancerButton").on("click", function(event){
     /* This function sets up the click handlers for the create-boxer
      * buttons on index.html. You should only need to make one small change to it.
@@ -42,6 +43,7 @@ $(document).ready(function(){
   }
 
   $('body').keydown(function(e){
+    $('.splash').hide();
 
     //throttling keystrokes
     var now = Date.now();
