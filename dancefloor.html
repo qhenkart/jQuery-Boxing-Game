@@ -4,9 +4,9 @@
     <title>Fight Night Party</title>
     <link rel="stylesheet" type="text/css" href="styles.css" />
     <script src="lib/jquery.js"></script>
-    <script src="src/dancer.js"></script>
-    <script src="src/blinkyDancer.js"></script>
     <script src="src/boxer.js"></script>
+    <script src="src/players.js"></script>
+    <script src="src/folks.js"></script>
 
   </head>
   <body>
@@ -14,12 +14,12 @@
 
     <div class="topbar">
       <span class="title">Fight Night Party</span>
-      <a href="#" class="addDancerButton" data-dancer-maker-function-name="FredBoxer">add Fred the Champion</a>  
-      <a href="#" class="addDancerButton" data-dancer-maker-function-name="AllenBoxer">add Allen the Challenger</a>      </div>
+      <a href="#" class="addDancerButton" data-boxer-maker-function-name="Fred"> Fred the Champion</a>  
+      <a href="#" class="addDancerButton" data-boxer-maker-function-name="Allen">Allen the Challenger</a>      </div>
       <!-- health bar -->
-      <a href="#" class="fred">Fred Hits</a>
+      <a href="#" class="playerone">Player One Health</a>
       <div class="hitsContainer"></div>
-      <a href="#" class="allen">Allen Hits</a>
+      <a href="#" class="playertwo">Player Two Health</a>
       <div class="hitsContainer2"></div>
     <script src="src/init.js"></script>
   </body>

@@ -28,11 +28,7 @@ body, a:link, a:visited, a:active{
 .title{
   background-color: #777;
 }
-.dancer{
-  border:10px solid red;
-  border-radius:10px;
-  position:absolute;
-}
+
 /* new images */
 img{
   width:150px;
@@ -58,14 +54,14 @@ img{
 }
 
 
-.fredHits {
+.playeronehits {
  height:10px;
  width:30px;
  background-color: red;
  display: inline-block;
 
 }
-.allenHits {
+.playertwohits {
  height:10px;
  width:30px;
  background-color: red;
