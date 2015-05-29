@@ -1,2 +1,2 @@
-#subclass-dance-party
-This is a project I completed as a student at [hackreactor](http://hackreactor.com). It is a silly boxing game made with Jquery using the Pseudoclassical instantiation pattern.
+#Boxing Game
+A silly Jquery boxing game I made featuring the lectureres at Hack Reactor duking it out! The project started as a sprint on subclassing, but I decided to take it to the next level and create a 'full featured' game 
